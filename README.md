@@ -11,8 +11,7 @@ Use the following command to clone the [workshop](https://github.com/data-scienc
 git clone https://github.com/data-science-on-aws/oreilly_book.git
 ```
 
-Breakout room for troubleshooting - 
-https://chime.aws/4105144644
+## Breakout room for troubleshooting - https://chime.aws/4105144644
 
 *Introduction*
 Allocated time: 10 minutes
