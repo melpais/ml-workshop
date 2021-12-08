@@ -82,6 +82,8 @@ Resources:
 - 10_pipeline/05_Register_Deploy_Model.ipynb
 - 10_pipeline/kubeflow
   - 10_pipeline/kubeflow/00_00_Setup_EKS.ipynb
+    - In step 3 - Create EKS cluster, replace the --version 1.17 with --version 1.18
+
   - 10_pipeline/kubeflow/00_01_Configure_Environment.ipynb
   - 10_pipeline/kubeflow/00_02_Create_S3_Bucket.ipynb
   - 10_pipeline/kubeflow/00_03_Setup_Kubeflow.ipynb
