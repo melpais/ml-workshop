@@ -57,6 +57,8 @@ Resources:
   - [BERT uncased](https://huggingface.co/bert-base-uncased)
   - [DistilBERT](https://huggingface.co/docs/transformers/model_doc/distilbert)
 - [Feature Store](https://docs.aws.amazon.com/sagemaker/latest/dg/feature-store-getting-started.html)
+- [Lineage Tracking](https://docs.aws.amazon.com/sagemaker/latest/dg/lineage-tracking.html)
+- [SageMaker Experiments](https://docs.aws.amazon.com/sagemaker/latest/dg/experiments.html)
 
 ## Train, Model Registry, and Deployment and AutoScaling
 *Train*
