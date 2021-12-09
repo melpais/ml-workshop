@@ -95,22 +95,22 @@ Resources:
   - 10_pipeline/kubeflow/02_Kubeflow_Pipeline_Simple.ipynb
   - 10_pipeline/kubeflow/03_Kubeflow_Pipeline_Reviews_BERT_SageMaker.ipynb
 
-    Update the last cell of 03_Kubeflow_Pipeline_Reviews_BERT_SageMaker.ipynb with following code.
-```
-import json
-inputs = {"features": ["This is great!"]}
-response = sm_runtime.invoke_endpoint(
-    EndpointName=endpoint_name,
-    ContentType="application/jsonlines",
-    Accept="application/jsonlines",
-    Body=json.dumps(inputs).encode("utf-8")
-)
-print("response: {}".format(response))
-predicted_classes_str = response["Body"].read().decode()
-predicted_classes_json = json.loads(predicted_classes_str)
-predicted_classes = predicted_classes_json['predicted_label']
-print("\n predicted_classes: {}".format(predicted_classes))
-```
+    - Update the last cell of 03_Kubeflow_Pipeline_Reviews_BERT_SageMaker.ipynb with following code.
+        ```
+        import json
+        inputs = {"features": ["This is great!"]}
+        response = sm_runtime.invoke_endpoint(
+            EndpointName=endpoint_name,
+            ContentType="application/jsonlines",
+            Accept="application/jsonlines",
+            Body=json.dumps(inputs).encode("utf-8")
+        )
+        print("response: {}".format(response))
+        predicted_classes_str = response["Body"].read().decode()
+        predicted_classes_json = json.loads(predicted_classes_str)
+        predicted_classes = predicted_classes_json['predicted_label']
+        print("\n predicted_classes: {}".format(predicted_classes))
+        ```
 
   - 10_pipeline/kubeflow/04_Distributed_Training.ipynb
   - 10_pipeline/kubeflow/05_Hyper_Parameter_Tuning.ipynb
